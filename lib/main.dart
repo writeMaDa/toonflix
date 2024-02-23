@@ -14,7 +14,10 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int counter = 0;
   void onClicked() {
-    counter = counter + 1;
+    setState(() {
+      //build 메서드를 다시 호출해서 화면을 새로고침해줌(바뀐 값으로)
+      counter = counter + 1; //하지만 굳이 setState안에서 할 필요는 없음. 안에서 하면 가독성이 좋을 뿐
+    });
   }
 
   @override
