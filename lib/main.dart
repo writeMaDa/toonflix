@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
           //Flutter 2.0 이후 ThemeData에서 backgroundColor를 직접 사용하는 것은 권장되지 않음
           backgroundColor: const Color(0xFFE7626C),
         ),
+        //help
         textTheme: const TextTheme(
           displayLarge: TextStyle(
             color: Color(0xFF232B55),
